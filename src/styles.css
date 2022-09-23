@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'runescapeFont';
+    src: url(./runescape_chat_font.woff) format('woff');
+}
+*{
+    font-family: 'runescapeFont', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#content{
+    height: 100vh;
+    width:100%;
+    display: grid;
+    grid-template-rows: 10% 10% 80%;
+}
+.heading{
+   background-image: url(./background.jpeg);
+}
+h1{
+    padding-top: 10px;
+    color: yellow;
+    text-align: center;
+}
+.nav{
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color:#64882d
+}
+.nav div{
+    border: solid;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10,10,10, 0.9);
+    border-radius: 3px;
+    border-color: #382418;
+}
+.main{
+    height: 100vh;
+    background-image: url("./scroll-png-26396-1.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContent{
+    border-radius: 5px;
+    height: 600px;
+    width:700px;
+
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:repeat(4, 1fr);
+}
+#menuItem{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    max-height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height:100px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home{
+    padding: 0px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.home img{
+    border-radius: 10px;
+    justify-self: center;
+    height: 60%;
+    width: 60%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home p{
+    font-size: 24px;
+    justify-self: center;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+}
+.contact > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    padding-left: 30px;
+}
+svg{
+    padding-right: 30px;
+}
+.contact img{
+    height: 100%;
+    width: 100%;
+}
